@@ -36,7 +36,7 @@ Install the following Python packages before running the script:
 
 pip install pandas numpy scikit-learn openpyxl google-generativeai
 
-If the API is't working, go to this link https://aistudio.google.com/app/api-keys and generate a API key for yourslef, then replace the API key with your's in line 18 of the code.
+Gemini auto dectes API leaks, so go to this link https://aistudio.google.com/app/api-keys and generate a API key for yourslef, then replace the API key with your's in line 18 of the code.
 genai.configure(api_key="HERE") <-- aka here
 
 How to Run the Program
@@ -66,6 +66,7 @@ Conclusion
 ==============================================
 This project demonstrates that sorting order has minimal effect on the linear regression model’s ability to predict battery SOH. 
 The final model trained on the original dataset achieves consistent and accurate predictions, classifying batteries as “Healthy” or “Unhealthy” based on the SOH threshold.
+
 
 
 
