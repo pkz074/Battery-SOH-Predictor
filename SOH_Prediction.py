@@ -17,7 +17,7 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 # ============================================================
 genai.configure(api_key="")
 
-gemini_model = genai.GenerativeModel("gemini-2.5-flash-lite")
+gemini_model = genai.GenerativeModel("gemini-3-pro-preview")
 
 def ask_gemini(question):
     """Send a user question to Gemini and return natural-language answer."""
@@ -171,13 +171,13 @@ print("=================================================")
 print("Type:")
 print("  • 'predict' → Enter U1–U21 values for SOH prediction")
 print("  • Ask any question → Gemini will answer")
-print("  • 'exit' → Quit")
+print("  • 'q' → Quit")
 print("=================================================\n")
 
 while True:
     user_input = input("You: ").strip()
 
-    if user_input.lower() == "exit":
+    if user_input.lower() == "q":
         print("Goodbye!")
         break
 
@@ -196,5 +196,6 @@ while True:
         print("\n--- Gemini Answer ---")
         print(ask_gemini(user_input))
         print("---------------------\n")
+
 
 
